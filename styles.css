@@ -1,0 +1,107 @@
+ul{
+    list-style: none;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+body{
+    margin-left: 350px;
+    margin-right: 350px;
+    text-align: center;
+    background-image: url(./pixel2.gif);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 600px){
+    body{  
+    margin-left: 0px;
+    margin-right: 0px;
+    }
+} 
+
+#pantallaInicio{
+    border: 2px solid black;
+    margin-top: 100px;
+    padding: 20px;
+
+background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+   
+
+
+}
+#pantallaJuego{
+    border: 2px solid black;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: lightyellow; 
+    height: 600px auto;
+    position: relative;
+    background: inherit;
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#zonaTexto{
+    text-align: center;
+    color: white;
+    font-family: 'Fredericka the Great', cursive;
+    border: 5px solid #A47449 ;
+    width: auto;
+    height: 300px auto;
+    margin-top: 25px;
+    padding: 10px;
+    position: relative;
+    border-radius: 15px;
+    background-color:#23503E ;
+
+}
+
+
+
+button{
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    border-radius: 10px ;
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+input{
+  
+    margin-bottom: 15px;
+    font-size: large;
+    text-transform: uppercase;
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+
+
+#flecha{
+    margin-top: 5px;
+    transform: scaleX(-1);
+    
+}
+

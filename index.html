@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cifras y Letras</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+    <!-- fuentes -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+
+    <div id="pantallaInicio" class="container">
+        <div>
+            <h1>Juego de Adivinar Palabras</h1>
+            <p>El juego consiste en adivinar palabras con las letras y vocales que te concedemos.</p>
+            <p><strong>Como jugar:</strong> Pulsa los botones de "Pedir Vocal" y "Pedir Consonante" para recibir letras.
+            </p>
+            <p><strong> Las palabras tienen minimo 3 letras y máximo 9</strong>
+
+            <p>Una vez tengas las 9 letras debes pensar en palabras que contengan esas letras, cuando estés seguro pulsa
+                en
+                "Mostrar Palabras" y averigua cuantas has acertado</p>
+            <img src="./arrow.png" onclick="cambioPantallas()" alt="arrow" height="100" width="auto">
+        </div>
+    </div>
+
+    <div id="pantallaJuego" style="display: none;" class="container">
+        <h1>Juego de Adivinar Palabras</h1>
+        <input type="text" readonly id="cuadroLetras">
+        <br>
+        <button id="btn-Consonante" onclick="mostrarConsonante()"> Pedir Consonante</button>
+        <button id="btn-Vocal" onclick="mostrarVocal()">Pedir Vocal</button>
+        <button disabled id="btn-mostrar" onclick="buscarPalabras()">Mostrar Palabras</button>
+        <button disabled id="btn-replay" onclick="replay()">Volver a Jugar</button>
+
+
+
+        <div id="zonaTexto">
+            <ul id="listaPalabras">
+
+            </ul>
+
+        </div>
+
+        <img src="./arrow.png" id="flecha" onclick="cambioPantallas2()" alt="arrow" height="100" width="auto">
+    </div>
+
+
+</body>
+
+<script src="./diccionario.js"></script>
+<script src="./scripts.js"></script>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script> -->
+
+</html>
